@@ -1,0 +1,52 @@
+/*seletrores por tipo de elemento*/
+h1 {
+    color: blue;
+}
+
+i {
+    color: red;
+}
+
+ul {
+    background-color: rgb(50, 52, 155);
+}
+
+p {
+    color: orange;
+}
+/*seletor por classe (.)*/
+.vermelho {
+    color: red;
+}
+/*seletor por id (#) com agrupamento de seletores (separados por virgula)*/
+#p2, a, h1 {
+    font-size: 24px;
+    color: blue;
+}
+
+/*seletor universal (*) */
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*seletor de descendentes (elementos dentro de outros)*/
+h1 i {
+    color: yellow;
+}
+
+/*seletor especifico para pai e filho (>)*/
+h1 > i {
+    color: green;
+}
+
+/*seletor por vizinhança*/
+ul ~ p {
+    text-decoration: underline;
+}
+
+/*seletor especifico para o primeiro vizinho (+), aquele que esta logo ao lado*/
+ul + p {
+    text-decoration: none;
+}
+
+

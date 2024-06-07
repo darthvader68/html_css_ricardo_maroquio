@@ -1,0 +1,14 @@
+body {
+    font-family: 'Segoe UI', serif;
+    padding: 50px;
+    background-color: lightgray;
+}
+h1 {
+    color: darkgray;
+    text-align: center;
+    border: 1px solid black;
+}
+p {
+    text-align: justify;
+    font-size: 16px;
+}

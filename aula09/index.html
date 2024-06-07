@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formuarios</title>
+    </head>
+    <body>
+        <h1>Formularios</h1>
+        <hr>
+        <form method="get">
+            <p>
+                <label for="txtNomeCompleto">Nome Completo</label>
+                <br>
+                <input
+                    type="text"
+                    name="NomeCompleto"
+                    id="txtNomeCompleto"
+                    placeholder="Fulano de tal"
+                >
+            </p>
+            <p>
+                <label for="txtEmail">E-mail</label>
+                <br>
+                <input
+                    type="text"
+                    name="Email"
+                    id="txtEmail"
+                    placeholder="email@dominio.com"
+                >
+            </p>
+            <fieldset>
+                <legend>Cargo Pretendido</legend>
+                <input
+                    type="radio"
+                    name="cargo"
+                    id="rdProgramador"
+                    value="p"
+                >
+                <label for="rdProgramador">Programador</label>
+                <br>
+                <input
+                    type="radio"
+                    name="cargo"
+                    id="rdWebDesigner"
+                    value="w"
+                >
+                <label for="rdWebDesigner">WebDesigner</label>
+            </fieldset>
+            <p>
+                <input type="checkbox" name="Aceito" id="chkAceito">
+                <label for="Aceito">Aceito os termos de uso</label>
+            </p>
+            <p>
+                <label for="slctEstado">Estado</label>
+                <br>
+                <select name="Estado" id="slctEstado">
+                    <optgroup label="Norte">
+                        <option value="AM">Amazonas</option>
+                        <option value="RO">Roraima</option>
+                    </optgroup>
+                    <optgroup label="Sudeste">
+                        <option value="ES">Espirito Santo</option>
+                        <option value="SP">Sao Paulo</option>
+                    </optgroup>
+                    <optgroup label="Nordeste">
+                        <option value="BA">Bahia</option>
+                        <option value="CE" selected>Ceara</option>
+                    </optgroup>
+                    <optgroup label="Sul">
+                        <option value="PR">Parana</option>
+                        <option value="SC">Santa Catarina</option>
+                    </optgroup>
+                </select>
+            </p>
+            <p>
+                <label for="slctLinguagens">Linguagens de Programacao</label><br>
+                <select name="Linguagens" id="slctLinguagens" size="6" multiple>
+                    <option value="html">html</option>
+                    <option value="css">css</option>
+                    <option value="javascript">javascript</option>
+                    <option value="c#">c#</option>
+                    <option value="java">java</option>
+                    <option value="python">python</option>
+                </select>
+            </p>
+            <p>
+                <label for="txtCidade">Cidade</label><br>
+                <input type="text" name="Cidade" id="txtCidade" list="cidades">
+                <datalist id="cidades">
+                    <option value="manaus">
+                    <option value="porto velho">
+                    <option value="sao paulo">
+                    <option value="vitoria">
+                    <option value="salvador">
+                    <option value="fortaleza">
+                    <option value="curitiba">
+                    <option value="florianopolis">
+                </datalist>
+            </p>
+            <p>
+                <label for="txtCurriculo">Curriculo</label><br>
+                <textarea name="curriculo" id="txtCurriculo" cols="30" rows="10" rols="10"></textarea>
+            </p>
+            <p>
+                <input type="reset" value="Limpar">
+                <input type="submit" value="Enviar">
+            </p>
+        </form>
+    </body>
+</html>

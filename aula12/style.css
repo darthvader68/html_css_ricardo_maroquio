@@ -1,0 +1,20 @@
+body {
+    background: gray url(img/pparede.png) repeat fixed;
+    background-size: 100px;
+
+}
+
+p {
+    background-color: rgba(0, 0, 255, 0.5);
+    color: white;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+#p1 {
+    margin: 10px auto;
+    padding: 25px;
+    width: 200px;
+    height: 250px;
+    outline: 3px solid brack;
+}
